@@ -1,0 +1,28 @@
+﻿ @model IEnumerable<Event>
+@{}
+
+<div class="album py-5 bg-light">
+         <div class="container">
+             <div class="row">
+                 @foreach(var item in Model)
+                 {
+                     <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="@item.Image" width="100%" height="225" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">@item.Name</p>
+                                <p class="card-text">@item.Desc</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-club">
+                                            <a type="btn btn-success" asp-controller="Event" asp-action="Detail" asp-route-id="@item.Id" class="btn btnsmall btn-outline-secondary">SHOW DETAILS</a>
+                                            <a type="button" asp-controller="Event" asp-action="Edit" asp-route-id="@item.Id"  class="btn btnsmall btn-outline-secondary">EDIT</a>
+                                        </div>
+                                        <small class="text-muted">@item.EventCategory</small>
+                                    </div>
+                            </div>
+                        </div>
+                     </div>
+                 }
+             </div>
+         </div>
+</div>
