@@ -1,7 +1,4 @@
 ﻿@model Club
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
 @{
 }
 
@@ -23,13 +20,11 @@
                 <div class="col-lg-4 d-flex flex-column justify-content-between mr-auto ml-auto">
                     <div>
                         <h1 class="mb-2">@Model.Name</h1>
-                        <h2 class="lead mb-3">@Model.Address</h2>
-                        <div>
-                            <span class="badge badge-secondary mr-3">@Model.Category</span>
-                        </div>
+                        
+                        <h1 class="mb-2">@Model.Category</h1>
                     </div>
                     <div>
-                        <div class="btn-group mb-2">
+                        <div class="btn-club mb-2">
                             <button type="button" class="btn btn-success btn-lg">JOIN CLUB</button>
                         </div>
                     </div>
@@ -51,30 +46,29 @@
                         <div class="card-header bg-secondary d-flex justify-content-between">
                             </div>
                     </div>
-
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
+                        <ul class="list-club list-club-flush">
+                            <li class="list-club-item">
                                 <div class="d-flex justify-content-between">
                                     <div><i class="icon-text-document mr-1"></i> Created</div>
                                     <span>17/11/2022</span>
                                 </div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-club-item">
                                 <div class="d-flex justify-content-between">
                                     <div><i class="icon-edit mr-1"></i> Last updated</div>
                                     <span>23/12/2022</span>
                                 </div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-club-item">
                                 <div class="d-flex justify-content-between">
                                     <div><i class="icon-thumbs-up mr-1"></i> Owner</div>
                                     <span>Lorem</span>
                                 </div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-club-item">
                                 <div class="d-flex justify-content-between">
                                     <div><i class="icon-share mr-1"></i> Shares</div>
                                     <span>Ipsum</span>

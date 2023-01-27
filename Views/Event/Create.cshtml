@@ -13,13 +13,11 @@
             <div class="row flex-md-row card card-md">
                 <div class="card-body bg-secondary">
                     <div class="text-center mb-5">
-                        <h1 class="h2 mb-2">Create your own race</h1>
-                        <span>Challenge the runners in your community</span>
+                        <h1 class="h2 mb-2">CREATE YOUR OWN EVENT</h1>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-6 col-lg-5">
                             <form method="post" asp-action="Create" enctype="multipart/form-data">
-                                <input type="hidden" id="AppUserId" name="UserId" asp-for="UserId" />
                                 <div class="form-row form-group">
                                     <div class="col">
                                         <input asp-for="Name" class="form-control form-control-lg" placeholder="Title" />
