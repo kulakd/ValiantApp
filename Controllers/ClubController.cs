@@ -35,7 +35,7 @@ namespace ValiantApp.Controllers
         {
             return View();
         }
-
+ 
         [HttpPost]
         public async Task<IActionResult> Create(CreateClubVM CCVM)
         {

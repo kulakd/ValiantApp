@@ -106,63 +106,60 @@ namespace Valiant.Data
             }
         }
 
-        //    public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)
-        //    {
-        //        using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
-        //        {
-        //            //Roles
-        //            var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+        public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)
+        {
+            using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
+            {
+                //Roles
+                var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-        //            if (!await roleManager.RoleExistsAsync(Roles.Admin))
-        //                await roleManager.CreateAsync(new IdentityRole(Roles.Admin));
-        //            if (!await roleManager.RoleExistsAsync(Roles.User))
-        //                await roleManager.CreateAsync(new IdentityRole(Roles.User));
+                if (!await roleManager.RoleExistsAsync(Roles.Admin))
+                    await roleManager.CreateAsync(new IdentityRole(Roles.Admin));
+                if (!await roleManager.RoleExistsAsync(Roles.User))
+                    await roleManager.CreateAsync(new IdentityRole(Roles.User));
 
-        //            //Users
-        //            var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<User>>();
-        //            string adminUserEmail = "296686@stud.umk.pl";
+                //Users
+                var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<User>>();
+                string adminUserEmail = "296686@stud.umk.pl";
 
-        //            var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
-        //            if (adminUser == null)
-        //            {
-        //                var newAdminUser = new User()
-        //                {
-        //                    UserName = "296686",
-        //                    Email = adminUserEmail,
-        //                    EmailConfirmed = true,
-        //                    Address = new Address()
-        //                    {
-        //                        Street = "Uczelniana",
-        //                        City = "Torun",
-        //                        Voivodeship = "Kujawsko-Pomorskie"
-        //                    }
-        //                };
-        //                await userManager.CreateAsync(newAdminUser, "Coding@1234?");
-        //                await userManager.AddToRoleAsync(newAdminUser, Roles.Admin);
-        //            }
+                var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
+                if (adminUser == null)
+                {
+                    var newAdminUser = new User()
+                    {
+                        UserName = "296686",
+                        Email = adminUserEmail,
+                        EmailConfirmed = true,
+                        Address = new Address()
+                        {
+                            Street = "Uczelniana",
+                            City = "Torun",
+                        }
+                    };
+                    await userManager.CreateAsync(newAdminUser, "Coding@1234?");
+                    await userManager.AddToRoleAsync(newAdminUser, Roles.Admin);
+                }
 
-        //            string appUserEmail = "aaa@aaa.com";
+                string appUserEmail = "aaa@aaa.com";
 
-        //            var appUser = await userManager.FindByEmailAsync(appUserEmail);
-        //            if (appUser == null)
-        //            {
-        //                var newUser = new User()
-        //                {
-        //                    UserName = "AAAA",
-        //                    Email = appUserEmail,
-        //                    EmailConfirmed = true,
-        //                    Address = new Address()
-        //                    {
-        //                        Street = "123 ABC",
-        //                        City = "Zbaszynek",
-        //                        Voivodeship = "Lubuskie"
-        //                    }
-        //                };
-        //                await userManager.CreateAsync(newUser, "Coding@1234?");
-        //                await userManager.AddToRoleAsync(newUser, Roles.User);
-        //            }
-        //        }
-        //    }
-        //}
+                var appUser = await userManager.FindByEmailAsync(appUserEmail);
+                if (appUser == null)
+                {
+                    var newUser = new User()
+                    {
+                        UserName = "AAAA",
+                        Email = appUserEmail,
+                        EmailConfirmed = true,
+                        Address = new Address()
+                        {
+                            Street = "123 ABC",
+                            City = "Zbaszynek",
+                        }
+                    };
+                    await userManager.CreateAsync(newUser, "Coding@1234?");
+                    await userManager.AddToRoleAsync(newUser, Roles.User);
+                }
+            }
+        }
     }
 }

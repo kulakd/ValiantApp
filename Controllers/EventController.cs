@@ -72,11 +72,6 @@ namespace ValiantApp.Controllers
                 Desc = events.Desc,
                 AddressId = events.AddressId,
                 URL = events.Image,
-                Address = new Address
-                {
-                    Street = events.Address.Street,
-                    City = events.Address.City,
-                },
                 eventCategory = events.EventCategory
             };
             return View(CEVM);

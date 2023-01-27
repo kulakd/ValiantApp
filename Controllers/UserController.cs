@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Valiant.Controllers
+namespace ValiantApp.Controllers
 {
     public class UserController : Controller
     {
