@@ -11,6 +11,5 @@ namespace ValiantApp.ViewModel
         public Address Address { get; set; }
         public IFormFile Image { get; set; }
         public EventCategory eventCategory { get; set; }
-        public string UserId { get; set; }
     }
 }

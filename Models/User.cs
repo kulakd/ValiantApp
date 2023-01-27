@@ -10,7 +10,7 @@ namespace ValiantApp.Models
         public string? City { get; set; }
         
         [ForeignKey("Address")]
-        public int AddressIP { get; set; }
+        public int? AddressIP { get; set; }
         public Address? Address { get; set; }
         public ICollection<Club> Clubs { get; set; }
         public ICollection<Event> Events { get; set; }

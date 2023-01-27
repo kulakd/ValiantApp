@@ -60,6 +60,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dawid/OneDrive/Pulpit/Studia/III_ROK/Aplikacje_Webowe/ValiantApp/Views/Switch/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3dpdGNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dawid/OneDrive/Pulpit/Studia/III_ROK/Aplikacje_Webowe/ValiantApp/Views/UserAccount/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dawid/OneDrive/Pulpit/Studia/III_ROK/Aplikacje_Webowe/ValiantApp/Views/UserAccount/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dawid/OneDrive/Pulpit/Studia/III_ROK/Aplikacje_Webowe/ValiantApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

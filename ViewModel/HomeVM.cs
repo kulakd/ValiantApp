@@ -6,5 +6,7 @@ namespace ValiantApp.ViewModel
     { 
         public IEnumerable<Club>? Clubs { get; set; }
         public string? City { get; set; }
+        public HomeUserCreateVM Register { get; set; } = new HomeUserCreateVM();
+
     }
 }

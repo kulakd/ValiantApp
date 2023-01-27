@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ValiantApp.Data;
 
@@ -11,9 +12,11 @@ using ValiantApp.Data;
 namespace ValiantApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230127190206_Identity")]
+    partial class Identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -259,7 +262,7 @@ namespace ValiantApp.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int?>("AddressIP")
+                    b.Property<int>("AddressIP")
                         .HasColumnType("int");
 
                     b.Property<string>("City")
@@ -414,7 +417,9 @@ namespace ValiantApp.Migrations
                 {
                     b.HasOne("ValiantApp.Models.Address", "Address")
                         .WithMany()
-                        .HasForeignKey("AddressIP");
+                        .HasForeignKey("AddressIP")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Address");
                 });
