@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dawid\\OneDrive\\Pulpit\\Studia\\III_ROK\\Aplikacje_Webowe\\ValiantApp\\ValiantApp.csproj": {}
+    "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\ValiantApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dawid\\OneDrive\\Pulpit\\Studia\\III_ROK\\Aplikacje_Webowe\\ValiantApp\\ValiantApp.csproj": {
+    "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\ValiantApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dawid\\OneDrive\\Pulpit\\Studia\\III_ROK\\Aplikacje_Webowe\\ValiantApp\\ValiantApp.csproj",
+        "projectUniqueName": "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
         "projectName": "ValiantApp",
-        "projectPath": "C:\\Users\\dawid\\OneDrive\\Pulpit\\Studia\\III_ROK\\Aplikacje_Webowe\\ValiantApp\\ValiantApp.csproj",
-        "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dawid\\OneDrive\\Pulpit\\Studia\\III_ROK\\Aplikacje_Webowe\\ValiantApp\\obj\\",
+        "projectPath": "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
+        "packagesPath": "C:\\Users\\wera2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\wera2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

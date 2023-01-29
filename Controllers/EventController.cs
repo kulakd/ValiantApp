@@ -20,6 +20,10 @@ namespace ValiantApp.Controllers
 
         public async Task<IActionResult> Index()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "UserAccount");
+            }
             IEnumerable<Event> events = await eventRepository.GetAll();
             return View(events);
         }
@@ -32,6 +36,10 @@ namespace ValiantApp.Controllers
 
         public IActionResult Create()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "UserAccount");
+            }
             return View();
         }
 

@@ -21,6 +21,10 @@ namespace ValiantApp.Controllers
 
         public async Task<IActionResult> Index()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "UserAccount");
+            }
             IEnumerable<Club> clubs = await clubRepository.GetAll();
             return View(clubs);
         }
@@ -33,6 +37,10 @@ namespace ValiantApp.Controllers
 
         public IActionResult Create()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "UserAccount");
+            }
             return View();
         }
  
