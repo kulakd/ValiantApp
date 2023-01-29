@@ -1,6 +1,7 @@
 ﻿@using ValiantApp.Data;
 @using ValiantApp.ViewModel;
-@model CreateClubVM
+@*@model CreateClubVM*@
+@model Club
 
 <div class="navbar-container">
 </div>
@@ -49,13 +50,13 @@
                                 </div>
                                 <div class="form-row form-group">
                                     <div class="col">
-                                        <input asp-for="Image" type="file" class="form-control form-control-lg" placeholder="Image" />
-                                        <span asp-validation-for="Image" class="text-danger"></span>
+                                        <input asp-for="ProfileImage" type="file" class="form-control form-control-lg" placeholder="Image" />
+                                        <span asp-validation-for="ProfileImage" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="form-row form-group">
                                     <div class="col">
-                                        <button class="btn btn-primary" type="submit">CREATE CLUB</button>
+                                        <button type="submit" class="btn btn-primary">CREATE CLUB</button>
                                     </div>
                                 </div>
                             </form>

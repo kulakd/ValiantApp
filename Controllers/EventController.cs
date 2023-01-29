@@ -41,29 +41,33 @@ namespace ValiantApp.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Create(CreateEventVM CEVM)
+        public async Task<IActionResult> Create(Event events)
         {
-            if (ModelState.IsValid)
-            {
-                var image = await photoRepository.AddPhotoAsync(CEVM.Image);
-                var events = new Event
-                {
-                    Name = CEVM.Name,
-                    Desc = CEVM.Desc,
-                    Image = image.Url.ToString(),
-                    EventCategory = CEVM.eventCategory,
-                    Address = new Address
-                    {
-                        Street = CEVM.Address.Street,
-                        City = CEVM.Address.City,
-                    }
-                };
-                eventRepository.Add(events);
-                return RedirectToAction("Index");
-            }
-            else
-                ModelState.AddModelError("", "Failed");
-            return View(CEVM);
+            //if (ModelState.IsValid)
+            //{
+            //    var image = await photoRepository.AddPhotoAsync(CEVM.Image);
+            //    var events = new Event
+            //    {
+            //        Name = CEVM.Name,
+            //        Desc = CEVM.Desc,
+            //        Image = image.Url.ToString(),
+            //        EventCategory = CEVM.eventCategory,
+            //        Address = new Address
+            //        {
+            //            Street = CEVM.Address.Street,
+            //            City = CEVM.Address.City,
+            //        }
+            //    };
+            //    eventRepository.Add(events);
+            //    return RedirectToAction("Index");
+            //}
+            //else
+            //    ModelState.AddModelError("", "Failed");
+            //return View(CEVM);
+            if (!ModelState.IsValid)
+                return View(events);
+            eventRepository.Add(events);
+            return RedirectToAction("Index");
         }
 
         [HttpGet]

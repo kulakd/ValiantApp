@@ -1,7 +1,7 @@
 ﻿@using ValiantApp.Data;
 @using ValiantApp.ViewModel;
-@model CreateEventVM
-
+@*@model CreateEventVM*@
+@model Event
 
 <div class="navbar-container">
 </div>
@@ -33,10 +33,10 @@
 
                                 <div class="form-row form-Group">
                                     <div class="col">
-                                        <select asp-for="eventCategory" asp-items="@Html.GetEnumSelectList<EventCategory>()" class="form-control">
+                                        <select asp-for="EventCategory" asp-items="@Html.GetEnumSelectList<EventCategory>()" class="form-control">
                                             <option>--Select--</option>
                                         </select>
-                                        <span asp-validation-for="eventCategory" class="text-danger"></span>
+                                        <span asp-validation-for="EventCategory" class="text-danger"></span>
                                     </div>
                                 </div>
 
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="form-row form-Group">
                                     <div class="col">
-                                        <button class="btn btn-primary" type="submit">Create</button>
+                                        <button class="btn btn-block btn-success btn-lg" type="submit">Create</button>
                                     </div>
                                 </div>
                             </form>

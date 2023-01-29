@@ -41,28 +41,32 @@ namespace ValiantApp.Controllers
         }
  
         [HttpPost]
-        public async Task<IActionResult> Create(CreateClubVM CCVM)
+        public async Task<IActionResult> Create(Club club)
         {
-            if (ModelState.IsValid)
-            {
-                var image = await photoRepository.AddPhotoAsync(CCVM.Image);
-                var club = new Club
-                {
-                    Name = CCVM.Name,
-                    Desc = CCVM.Desc,
-                    ProfileImage = image.Url.ToString(),
-                    Address = new Address
-                    {
-                        Street = CCVM.Address.Street,
-                        City = CCVM.Address.City,
-                    }
-                };
-                clubRepository.Add(club);
-                return RedirectToAction("Index");
-            }
-            else
-                ModelState.AddModelError("", "Failed");
-            return View(CCVM);
+            //if (ModelState.IsValid)
+            //{
+            //    var image = await photoRepository.AddPhotoAsync(CCVM.Image);
+            //    var club = new Club
+            //    {
+            //        Name = CCVM.Name,
+            //        Desc = CCVM.Desc,
+            //        ProfileImage = image.Url.ToString(),
+            //        Address = new Address
+            //        {
+            //            Street = CCVM.Address.Street,
+            //            City = CCVM.Address.City,
+            //        }
+            //    };
+            //    clubRepository.Add(club);
+            //    return RedirectToAction("Index");
+            //}
+            //else
+            //    ModelState.AddModelError("", "Failed");
+            //return View(CCVM);
+            if (!ModelState.IsValid)
+                return View(club);
+            clubRepository.Add(club);
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Edit(int id)
