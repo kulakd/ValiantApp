@@ -4083,19 +4083,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wera2\\.nuget\\packages\\": {}
+    "C:\\Users\\dawid\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
+      "projectUniqueName": "C:\\Users\\dawid\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
       "projectName": "ValiantApp",
-      "projectPath": "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
-      "packagesPath": "C:\\Users\\wera2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wera2\\Source\\Repos\\ValiantApp\\obj\\",
+      "projectPath": "C:\\Users\\dawid\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
+      "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dawid\\Source\\Repos\\ValiantApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\wera2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4103,6 +4108,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

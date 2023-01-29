@@ -53,7 +53,8 @@ namespace ValiantApp.Controllers
         [Route("UserAccount/Register")]
         public IActionResult Register()
         {
-            return View();
+            var response = new RegisterVM();
+            return View(response);
         }
 
         [HttpPost]

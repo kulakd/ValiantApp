@@ -36,10 +36,6 @@ namespace ValiantApp.Controllers
 
         public IActionResult Create()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Login", "UserAccount");
-            }
             return View();
         }
 
@@ -55,6 +51,7 @@ namespace ValiantApp.Controllers
                     Name = CEVM.Name,
                     Desc = CEVM.Desc,
                     Image = image.Url.ToString(),
+                    EventCategory = CEVM.eventCategory,
                     Address = new Address
                     {
                         Street = CEVM.Address.Street,
@@ -69,6 +66,7 @@ namespace ValiantApp.Controllers
             return View(CEVM);
         }
 
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
             var events = await eventRepository.GetByIdAsync(id);
@@ -79,6 +77,7 @@ namespace ValiantApp.Controllers
                 Name = events.Name,
                 Desc = events.Desc,
                 AddressId = events.AddressId,
+                Address = events.Address,
                 URL = events.Image,
                 eventCategory = events.EventCategory
             };

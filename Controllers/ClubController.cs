@@ -37,10 +37,6 @@ namespace ValiantApp.Controllers
 
         public IActionResult Create()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Login", "UserAccount");
-            }
             return View();
         }
  
