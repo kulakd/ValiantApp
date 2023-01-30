@@ -10,21 +10,29 @@ namespace ValiantApp.Controllers
 {
     public class ClubController : Controller
     {
+        private readonly AppDbContext context;
         private readonly IClubRepository clubRepository;
         private readonly IPhotoRepository photoRepository;
 
-        public ClubController(IClubRepository clubRepository, IPhotoRepository photoRepository)
+        public ClubController(AppDbContext context, IClubRepository clubRepository, IPhotoRepository photoRepository)
         {
+            this.context = context;
             this.clubRepository = clubRepository;
             this.photoRepository = photoRepository;
         }
 
+        //public async Task<IActionResult> Index()
+        //{
+        //    if (!User.Identity.IsAuthenticated)
+        //    {
+        //        return RedirectToAction("Login", "UserAccount");
+        //    }
+        //    IEnumerable<Club> clubs = await clubRepository.GetAll();
+        //    return View(clubs);
+        //}
+
         public async Task<IActionResult> Index()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Login", "UserAccount");
-            }
             IEnumerable<Club> clubs = await clubRepository.GetAll();
             return View(clubs);
         }
@@ -37,36 +45,36 @@ namespace ValiantApp.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var CCVM = new CreateClubVM();
+            return View(CCVM);
         }
- 
         [HttpPost]
-        public async Task<IActionResult> Create(Club club)
+        public async Task<IActionResult> Create(CreateClubVM CCVM)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    var image = await photoRepository.AddPhotoAsync(CCVM.Image);
-            //    var club = new Club
-            //    {
-            //        Name = CCVM.Name,
-            //        Desc = CCVM.Desc,
-            //        ProfileImage = image.Url.ToString(),
-            //        Address = new Address
-            //        {
-            //            Street = CCVM.Address.Street,
-            //            City = CCVM.Address.City,
-            //        }
-            //    };
-            //    clubRepository.Add(club);
-            //    return RedirectToAction("Index");
-            //}
-            //else
-            //    ModelState.AddModelError("", "Failed");
-            //return View(CCVM);
-            if (!ModelState.IsValid)
-                return View(club);
-            clubRepository.Add(club);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var image = await photoRepository.AddPhotoAsync(CCVM.Image);
+                var club = new Club
+                {
+                    Name = CCVM.Name,
+                    Desc = CCVM.Desc,
+                    ProfileImage = image.Url.ToString(),
+                    Address = new Address
+                    {
+                        Street = CCVM.Address.Street,
+                        City = CCVM.Address.City,
+                    }
+                };
+                clubRepository.Add(club);
+                return RedirectToAction("Index");
+            }
+            else
+                ModelState.AddModelError("", "Failed");
+            return View(CCVM);
+            //if (!ModelState.IsValid)
+            //    return View(club);
+            //clubRepository.Add(club);
+            //return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Edit(int id)

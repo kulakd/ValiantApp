@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using ValiantApp.Data;
 
-namespace Valiant.Data
+namespace ValiantApp.Data
 {
     public class Seed
     {

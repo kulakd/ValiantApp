@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Valiant.Data;
 using ValiantApp.Data;
 using ValiantApp.Models;
 using ValiantApp.Other;
