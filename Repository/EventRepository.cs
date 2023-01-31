@@ -31,7 +31,7 @@ namespace ValiantApp.Repository
 
         public async Task<Event?> GetByIdAsync(int id)
         {
-            return await context.Events.FirstOrDefaultAsync(c => c.Id == id);
+            return await context.Events.Include(i=>i.Address).FirstOrDefaultAsync(c => c.Id == id);
         }
 
         public async Task<Event?> GetByIdAsyncNoTrack(int id)

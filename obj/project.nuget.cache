@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vuZHNu97H92nJDKW1L5q67O5tCLapkf5QCRVfZEV3ZNRttfB+igD9kyXq2f0i0wjZPITxzphMYUXtrCMuqc0yQ==",
+  "dgSpecHash": "L9z20py6qzEAmhAjB5u/RkO6iPVjz9HKUZFLPx1JskJs9E5xO0c6Ad6Kdr9VJ8KNd5UaxDeICXUsxq7EpaND3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dawid\\source\\repos\\ValiantApp\\ValiantApp.csproj",
+  "projectFilePath": "C:\\Users\\dawid\\Source\\Repos\\ValiantApp\\ValiantApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dawid\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dawid\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

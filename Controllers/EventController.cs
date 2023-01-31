@@ -41,33 +41,33 @@ namespace ValiantApp.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Create(Event events)
+        public async Task<IActionResult> Create(CreateEventVM CEVM/*Event events*/)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    var image = await photoRepository.AddPhotoAsync(CEVM.Image);
-            //    var events = new Event
-            //    {
-            //        Name = CEVM.Name,
-            //        Desc = CEVM.Desc,
-            //        Image = image.Url.ToString(),
-            //        EventCategory = CEVM.eventCategory,
-            //        Address = new Address
-            //        {
-            //            Street = CEVM.Address.Street,
-            //            City = CEVM.Address.City,
-            //        }
-            //    };
-            //    eventRepository.Add(events);
-            //    return RedirectToAction("Index");
-            //}
-            //else
-            //    ModelState.AddModelError("", "Failed");
-            //return View(CEVM);
-            if (!ModelState.IsValid)
-                return View(events);
-            eventRepository.Add(events);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var image = await photoRepository.AddPhotoAsync(CEVM.Image);
+                var events = new Event
+                {
+                    Name = CEVM.Name,
+                    Desc = CEVM.Desc,
+                    Image = image.Url.ToString(),
+                    EventCategory = CEVM.eventCategory,
+                    Address = new Address
+                    {
+                        Street = CEVM.Address.Street,
+                        City = CEVM.Address.City,
+                    }
+                };
+                eventRepository.Add(events);
+                return RedirectToAction("Index");
+            }
+            else
+                ModelState.AddModelError("", "Failed");
+            return View(CEVM);
+            //if (!ModelState.IsValid)
+            //    return View(events);
+            //eventRepository.Add(events);
+            //return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -121,6 +121,34 @@ namespace ValiantApp.Controllers
                 return View(EEVM);
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var events = await eventRepository.GetByIdAsync(id);
+            if (events == null) return View("Error");
+            return View(events);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteEvent(int id)
+        {
+            var events= await eventRepository.GetByIdAsync(id);
+
+            if (events == null)
+            {
+                return View("Error");
+            }
+
+            if (!string.IsNullOrEmpty(events.Image))
+            {
+                _ = photoRepository.DeletePhotoAsync(events.Image);
+            }
+
+            eventRepository.Delete(events);
+            return RedirectToAction("Index");
+        }
+
 
     }
 }
