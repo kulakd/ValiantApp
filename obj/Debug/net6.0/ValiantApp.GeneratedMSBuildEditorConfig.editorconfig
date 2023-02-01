@@ -9,85 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ValiantApp
 build_property.RootNamespace = ValiantApp
-build_property.ProjectDir = C:\Users\dawid\Source\Repos\ValiantApp\
+build_property.ProjectDir = C:\Users\wera2\source\repos\ValiantApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dawid\Source\Repos\ValiantApp
+build_property.MSBuildProjectDirectory = C:\Users\wera2\source\repos\ValiantApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Club/Create.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Club/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Club/Delete.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Club/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Club/Detail.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Club/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Club/Edit.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Club/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Club/Index.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Club/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Event/Create.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Event/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Event/Delete.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Event/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Event/Detail.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Event/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Event/Edit.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Event/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Event/Index.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Event/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Home/Index.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Shared/Error.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Switch/Index.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Switch/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3dpdGNoXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/UserAccount/Login.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/UserAccount/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/UserAccount/Register.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/UserAccount/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/_ViewImports.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/_ViewStart.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dawid/Source/Repos/ValiantApp/Views/Shared/_Layout.cshtml]
+[C:/Users/wera2/source/repos/ValiantApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x44j0ik5tv
