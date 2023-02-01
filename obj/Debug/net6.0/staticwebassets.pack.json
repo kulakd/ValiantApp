@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\images\\date.png",
+      "PackagePath": "staticwebassets\\images\\date.png"
+    },
+    {
+      "Id": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\images\\team.png",
+      "PackagePath": "staticwebassets\\images\\team.png"
+    },
+    {
       "Id": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

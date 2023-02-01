@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tkASoVe03Syo8bhB+5OcInofM1AHRgGzcUmBWG5I6nk=",
+  "Hash": "gSyzEWBtCJ1Mq3XkVnyLVGUJJajK4oqzDGPBkV658Gg=",
   "Source": "ValiantApp",
   "BasePath": "_content/ValiantApp",
   "Mode": "Default",
@@ -1103,6 +1103,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\images\\date.png",
+      "SourceId": "ValiantApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\",
+      "BasePath": "_content/ValiantApp",
+      "RelativePath": "images/date.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\date.png"
+    },
+    {
+      "Identity": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\images\\team.png",
+      "SourceId": "ValiantApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\",
+      "BasePath": "_content/ValiantApp",
+      "RelativePath": "images/team.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\team.png"
     },
     {
       "Identity": "C:\\Users\\wera2\\source\\repos\\ValiantApp\\wwwroot\\js\\site.js",
