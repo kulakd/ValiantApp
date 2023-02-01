@@ -41,10 +41,37 @@ body {
   margin-top: 25px;
 }
 
-.frontpage-img {
+/*.frontpage-img {
   display: block;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}*/
+
+.frontpage-img {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.image-1 {
+    float: left;
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 200px;
+}
+
+.image-2 {
+    float: right;
+    width: 20%;
+    margin-right: 200px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
